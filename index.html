@@ -3,30 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Mi Página</title>
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #885656;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        img {
+            max-width: 150px; /* Ajusta este valor según tu preferencia */
+            height: auto;
+            border-radius: 50%; /* Opcional: da un efecto de bordes redondeados */
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #sobre-mi {
+            background-color: #19c4d7;
+        }
+
+        #habilidades {
+            background-color: #cd64c8;
+        }
+
+        #proyectos {
+            background-color: #ffd54f;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Mi Página Web</h1>
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mi Imagen">
+        <h1>Tu Nombre</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <h2>Bienvenido a mi página</h2>
-        <p>Esta es una página de ejemplo.</p>
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Innovador apasionado en tecnología y diseño. Transformo ideas en soluciones digitales. Busco la excelencia en cada proyecto.</p>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Mi Página Web</p>
-    </footer>
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Desarrollo Web</li>
+            <li>Diseño UX/UI</li>
+            <li>Programación en JavaScript</li>
+            <li>Manejo de Proyectos</li>
+        </ul>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <p>Algunos de mis proyectos incluyen:</p>
+        <ul>
+            <li>Proyecto 1 - Descripción breve</li>
+            <li>Proyecto 2 - Descripción breve</li>
+            <li>Proyecto 3 - Descripción breve</li>
+        </ul>
+    </section>
 </body>
 </html>
