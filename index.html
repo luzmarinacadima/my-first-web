@@ -8,12 +8,15 @@
         body {
             font-family: 'Arial', sans-serif;
             margin: 20px;
+            min-width: 320px;
+            position: relative; /* Añadido para posicionar los elementos hijos relativos a este contenedor */
         }
 
         header {
             text-align: center;
             padding: 20px 0;
             background-color: #885656;
+            position: relative; /* Añadido para posicionar los elementos hijos relativos a este contenedor */
         }
 
         h1 {
@@ -21,24 +24,46 @@
         }
 
         img {
-            max-width: 150px; /* Ajusta este valor según tu preferencia */
+            max-width: 150px;
             height: auto;
-            border-radius: 50%; /* Opcional: da un efecto de bordes redondeados */
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .social-links {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
         }
 
         section {
             margin-bottom: 30px;
-            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         #sobre-mi {
             background-color: #19c4d7;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px; /* Espacio entre #sobre-mi y #habilidades */
         }
 
         #habilidades {
             background-color: #cd64c8;
+            margin-top: 20px; /* Espacio entre #sobre-mi y #habilidades */
+            padding: 20px;
         }
 
         #proyectos {
@@ -51,6 +76,7 @@
 
         p {
             color: #666;
+            text-align: center;
         }
 
         ul {
@@ -66,6 +92,11 @@
 <body>
     <header>
         <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mi Imagen">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/tu_perfil" target="_blank">LinkedIn</a>
+            <a href="https://www.twitter.com/tu_usuario" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/tu_usuario" target="_blank">Instagram</a>
+        </div>
         <h1>Tu Nombre</h1>
     </header>
 
